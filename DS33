@@ -2,29 +2,29 @@
 // Задайте массив из вещественных чисел с ненулевой дробной частью. Найдите разницу между максимальным и минимальным элементов массива.
 
 
-// Console.WriteLine("Введите число");
-// int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число");
+int num = Convert.ToInt32(Console.ReadLine());
 
-// Random rnd = new Random();                       // Присвоение rnd
-// double[] arr = new double[10];
+Random rnd = new Random();                       // Присвоение rnd
+double[] arr = new double[10];
 
-// for (int i=0; i<10; i++)
-// {
-//     arr[i]= Math.Round(rnd.NextDouble()*(num-0), 3);   
-//     // Настройка: 1) генирации случайных вещественных чисел от "0" до введенного числа "num". 2) И кол-ва цифр после запятой (3)
-//     Console.Write(arr[i] + ";  ");
-// }
-// Console.WriteLine();               // Перевод курсора на новую строку
+for (int i=0; i<10; i++)
+{
+    arr[i]= Math.Round(rnd.NextDouble()*(num-0), 3);   
+     // Настройка: 1) генирации случайных вещественных чисел от "0" до введенного числа "num". 2) И кол-ва цифр после запятой (3)
+    Console.Write(arr[i] + ";  ");
+}
+Console.WriteLine();               // Перевод курсора на новую строку
 
-// double max = arr[0];
-// double min = arr[0];
+double max = arr[0];
+double min = arr[0];
 
-// for (int i=0; i<10; i++)
-// {
-//     if (arr[i]>max)  max = arr[i];
-//     if (arr[i]<min)  min = arr[i];
-// }
-// Console.WriteLine("Максимальный элемент массива = " + max);
-// Console.WriteLine("Минимальный элемент массива = " + min);
-// Console.WriteLine("Разница между максимальным и минимальным элементами массива = " + String.Format("{0:F4}", max-min));
-// // Запись ответа с нужным кол-вом цифр после запятой (4)
+for (int i=0; i<10; i++)
+{
+    if (arr[i]>max)  max = arr[i];
+    if (arr[i]<min)  min = arr[i];
+}
+Console.WriteLine("Максимальный элемент массива = " + max);
+Console.WriteLine("Минимальный элемент массива = " + min);
+Console.WriteLine("Разница между максимальным и минимальным элементами массива = " + String.Format("{0:F4}", max-min));
+ // Запись ответа с нужным кол-вом цифр после запятой (4)
